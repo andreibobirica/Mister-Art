@@ -1,0 +1,53 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "mister art",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+            "name": "AskOpenAIIntent",
+            "slots": [
+                {
+                    "name": "question",
+                    "type": "AMAZON.SearchQuery"
+                }
+            ],
+            "samples": [
+                "cosa significa {question}",
+                "cosa è {question}",
+                "cercami {question}",
+                "parlami di {question}"
+            ]
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "ciao",
+            "come stai",
+            "dimmi ciao",
+            "ciao",
+            "dimmi la parola ciao"          
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "1"
+}
